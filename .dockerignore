@@ -1,0 +1,22 @@
+.env
+Frontend/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Zip/temp files
+*.zip
+*.log
+*.tmp

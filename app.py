@@ -49,8 +49,6 @@ def varify_token(request: Request):
     # print(token_record['username'])
     return token_record["username"]
 
-
-
 @app.post('/fibonacci')
 def fibonacci(n: int,username:str = Depends(varify_token)):
     # print(n,username)
@@ -109,10 +107,6 @@ def factorial(n: int,username:str = Depends(varify_token)):
     )
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=8080)
-# from pymongo import MongoClient
-
-# client = MongoClient(host="mongodb+srv://ayushgarg5002:o8zHILwIQ9HnhcWx@cluster0.7gau7mw.mongodb.net/")
-# print(client.list_database_names())
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("app:app", host="0.0.0.0", port=808
